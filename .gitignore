@@ -4,7 +4,7 @@
 ###############################################
 *.sketch
 
-config.js
+
 # Avoid accidental XD or Figma upload if you convert the design file
 #######################################################
 ## Please do not remove lines 11 and 12 - thanks! 🙂 ##

@@ -1,8 +1,19 @@
-  
+
+function hex_to_ascii(str1)
+ {
+	var hex  = str1.toString();
+	var str = '';
+	for (var n = 0; n < hex.length; n += 2) {
+		str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
+	}
+	return str;
+ }
+ 
+
 const getdata = () => {
   
-  let token_geo = config.my_api_key.geo;
-  let token_map = config.my_api_key.map;
+  let token_geo = hex_to_ascii('61745f3967595442674d62524e37624c5741454361566c547454444a59496679266970416464726573733d');
+  let token_map = hex_to_ascii('706b2e65794a31496a6f6961334a706332687559573568626d51694c434a68496a6f69593277795a324e7163574a6a4d444a7362444e6a623246354e7a563463444a3265694a392e75615f334f7a6757554a6d30654b5079676236394a51');
 
  
     var x = document.getElementById("myip").value;
