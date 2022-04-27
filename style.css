@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+#map {
+    height: 70vh; 
+    z-index: 1;
+}
+    
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.head{
+    background-image: url(./images/pattern-bg.png);
+    background-size: 100% 100%;
+    padding:40px 0 80px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding:25px ;
+    height:auto;
+    position: absolute;
+    z-index: 2;
+   
+}
+
+.ctn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.card-ctn p{
+    padding:0 0 10px;
+    font-weight: 700;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color:hsl(0, 0%, 59%);
+}
+
+.card-ctn{
+    padding: 0 10px 0;
+}
+
+.card-ctn .border{
+    border-right: 2px solid hsla(0, 0%, 59%, 0.189);
+    border-left: 2px solid hsla(0, 0%, 59%, 0.189);
+    padding:0 50px 0;
+    
+}
+
+.border1{
+    border-left: 2px solid hsla(0, 0%, 59%, 0.189);
+    padding-left: 50px;
+}
+
+.dyn{
+    font-weight:700;
+}
+
+.ip-in{
+    margin:27px 0px 0;
+    padding: 10px ;
+    height: 40px;
+    width: 400px;
+    color: hsl(0, 0%, 59%);
+    border-radius: 12px;
+    border: none;
+}
+.btn{
+    width:40px;
+    height: 41px;
+    background-color: black;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    position: relative;
+    top:1px;
+    left:-40px;
+    cursor: pointer;
+}
+
+.ip-in:focus {
+   outline: none;
+}
+
+@media screen and (max-width: 830px) {
+    .card{
+        margin: 0 30px 0;
+      }
+}
+
+@media screen and (max-width: 590px) {
+  .card{
+    margin: 50px 10px 0;
+    flex-direction: column;
+  }
+
+  .card-ctn{
+      text-align: center;
+      padding-top: 10px;
+  }
+ 
+
+  .card-ctn .border{
+      border:none;
+  }
+
+  .border1{
+    border:none;
+    padding:0;
+  }
+  
+  .ip-in{
+      width:300px;
+  }
+
+  .search-box{
+      width: 300px;
+  }
+
+  .btn{
+  position:relative;
+  top:-40px;
+  left:260px;
+  }
+}

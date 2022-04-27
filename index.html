@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+ integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+ crossorigin=""></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+  <main class="ctn">
+  
+    <header class="head">
+        <h2 class="title">IP Address Tracker</h2>
+        <form class="search-box" action="javascript:void(0);" method="post">
+          <input type="text" id="myip" class="ip-in"   placeholder="Search for any IP address or domain">
+          <button class="btn" onclick="getdata()"><img src="images/icon-arrow.svg" alt="search"></button>
+        </form>
+    </header>
+  
+
+ 
+
+  <div class="ctn2">
+  <div class="card">
+
+    <div class="card-ctn">
+     
+        <p>IP ADDRESS</p>
+        <span id="ip" class="dyn"></span>
+     
+    </div>
+
+    <div class="card-ctn">
+      <div class="border1">
+        <p>LOCATION</p>
+        <span id="loc" class="dyn"></span>
+      </div>
+    </div>
+
+    <div class="card-ctn">
+      <div class="border">
+        <p> TIMEZONE</p>
+        <b>UTC</b> <span id="tme" class="dyn"></span>
+    </div>
+    </div>
+
+    <div class="card-ctn" >
+      <p> ISP</p>
+      <span id="isp" class="dyn"></span>
+    </div>
+
+
+  </div>
+  
+</div>
+<div id="map"></div>
+
+</main>
+<script src="config.js"></script>
+  <script src="app.js"></script>
+  
+  
+
+</body>
+</html>
