@@ -1,5 +1,4 @@
 
-
 function cipher(str1)
  {
 	var hex  = str1.toString();
