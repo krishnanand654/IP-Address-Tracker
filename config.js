@@ -18,7 +18,3 @@ const options = {
 	}
 };
 
-fetch('https://ip-geo-location.p.rapidapi.com/ip/check?format=json', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
